@@ -1,0 +1,12 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hugo Lara <hugo.alex200197@outlook.com>",
+  "license": "MIT"
+}
