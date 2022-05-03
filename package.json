@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js --excec babel-node -e js"
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "Hugo Lara <hugo.alex200197@outlook.com>",
