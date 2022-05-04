@@ -1,3 +1,5 @@
+const controller = require('../controllers/crmController');
+
 const routes = (app) => {
   app.route('/contact')
     .get((req,res,next) => {
@@ -8,9 +10,7 @@ const routes = (app) => {
       res.send('GET request successful');
     })
 
-    .post((req, res) => {
-      res.send('POST request was successful');
-    });
+    .post(controller.addNewContact);
   
   app.route('/contact/:contactId')
     .get((req,res) => {
