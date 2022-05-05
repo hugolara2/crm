@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const routes = require('./routes/crmRoute');
+const config = require('../config');
 const uri = "mongodb://localhost/CRM";
 
 //Mongoose conection
@@ -17,7 +18,7 @@ const app = express();
 app.use(bodyParser.urlencode({ extended: true }));
 app.use(bodyParser.json());
 
-const PORT = 3000;
+const PORT = config.api.port;
 
 routes(app);
 

@@ -14,6 +14,11 @@ const addNewContact = (req, res) => {
   });
 };
 
+const getContacts = (req, res) => {
+
+};
+
 module.exports = {
-  addNewContact
+  addNewContact,
+  getContacts, 
 };
